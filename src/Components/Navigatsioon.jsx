@@ -7,7 +7,7 @@ export default () => {
     return(
         <nav className={styles.paisNav}>       
             <Link href="/">
-                <a className={styles.logo}/>
+                <a className={styles.logo}>
                     <div className={styles.logoPilt}> 
                         <Image
                             alt="Matkaklubi logo"
@@ -20,10 +20,10 @@ export default () => {
                         <span>HIKING</span>
                         <span>CLUB</span> 
                     </section>
-                <a/>          
+                </a>          
             </Link>        
             <div className={styles.paremPool}>
-                <Link href="/treks">
+                <Link href="/">
                     <a className={styles.paremPoolLink}>HOME</a>
                 </Link>
                 <Link href="/">

@@ -34,19 +34,19 @@ const Teine = ()=>{
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum su spendisse ultrices gravida. Risus commodo viverra maec enas accumsan lacus vel facilisis.
           </p>
       <div className={styles.teineAlumineVasakNooled}>
-          <span className={`${styles.nooledVasakParem} ${styles.nooledKaldkriipsKokkuLehekylgiParem}`}>←</span>
+          <span className={styles.nooledVasakParem}>←</span>
           <span className={styles.nooledKokkuLehekylgi}>01</span>
           <span className={`${styles.nooledKaldkriips} ${styles.nooledKaldkriipsKokkuLehekylgiParem}${styles.nooledKaldkriipsKokkuLehekylgi}`}>/</span>
           <span className={`${styles.nooledKaldkriipsKokkuLehekylgi} ${styles.nooledKaldkriipsKokkuLehekylgiParem}`}>06</span>
-          <span className={`${styles.nooledVasakParem} ${styles.paisAlumineSisuH4}`}>→</span>
+          <span className={`${styles.nooledVasakParem} ${styles.paisAlumineSisuH4}${styles.nooledKaldkriipsKokkuLehekylgiParem}`}>→</span>
           </div>          
       </div>
       </div>            
-        <div className={`${styles.teineAlumineParem} ${styles.teineAlumineParemPilt}`}>               
-          <div className={styles.teineAlumineParemPilt1}></div>
-          <div className={styles.teineAlumineParemPilt1}></div>
-          <div className={styles.teineAlumineParemPilt1}></div>        
-        </div>  
+      <div className={styles.teineAlumineParem}>               
+        <div className={`${styles.teineAlumineParemPilt} ${styles.teineAlumineParemPilt1}`}></div>
+        <div className={`${styles.teineAlumineParemPilt} ${styles.teineAlumineParemPilt2}`}></div>
+        <div className={`${styles.teineAlumineParemPilt} ${styles.teineAlumineParemPilt3}`}></div>        
+      </div>  
     </div>
 
   )
