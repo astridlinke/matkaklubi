@@ -1,9 +1,9 @@
-import type { NextApiRequest, NextApiResponse } from "next";
+
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+export default async (req, res) => {
   if (req.method === "GET") {
     // get all todos
     const todos = await prisma.todo.findMany({
@@ -20,7 +20,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     res.json(todo);
   } else if (req.method === "PUT") {
     // update todo
-    const id = req.query.todoId as string;
+    const id = req.query.todoId;
     const data = JSON.parse(req.body);
     const todo = await prisma.todo.update({
       where: { id },
@@ -30,7 +30,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     res.json(todo);
   } else if (req.method === "DELETE") {
     // delete todo
-    const id = req.query.todoId as string;
+    const id = req.query.todoId;
     await prisma.todo.delete({ where: { id } });
 
     res.json({ status: "ok" });

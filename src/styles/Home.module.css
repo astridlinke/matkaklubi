@@ -1,131 +1,186 @@
-.container {
-  padding: 0 0.5rem;
+.pais{
+  background-image: url("../../public/Hills.png");
+  height: 778px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 32px;
+  padding-left: 72px;
+  padding-right: 80px;   
+}
+
+.paisAlumine{
+display: flex;
+justify-content: space-between;
+}
+
+.paisAlumineSisu{
+  margin-top: 230px;
+}
+
+.pealkirjad{
+  font-weight: 800;
+  letter-spacing: 0;
+  color:#0B0B0B;
+  line-height:0%;
+}
+
+.nupp{
+background-color: #0B0B0B; /* Black */
+border: none;
+height: 58px;
+color: white;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 12.5px;
+font-weight: 800;
+width: 250px;
+letter-spacing: 2.25px;
+}
+
+.paisAlumineSisuIkoon1{
+  background-image: url("../../public/Butterfly@2x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;   
+  width: 66px;  
+  height: 75px;
+  margin-left: 571px; 
+  margin-bottom: -50px;   
+}
+
+.paisAlumineSisuH2{
+  font-size: 40px;    
+}
+
+.paisAlumineSisuIkoon2{
+  background-image: url("../../public/sinineliblikas.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;      
+  height: 32px;
+  width: 60px;
+  margin-left: -40px;
+  margin-bottom: -55px;
+}
+
+.paisAlumineSisuH1{
+  font-size: 74px;
+}
+
+.paisAlumineSisuH4{
+  font-size: 21px;
+}
+
+.paisAluminePilt {
+  background-image: url("../..//public/matkaja.png");
+  height: 915px;
+  width:915px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 32px;
+  padding-left: 72px;
+  padding-right: 80px;
+  margin-right: -300px;
+  border-radius: 500px;
+  box-shadow: -2px 5px 14px 1px #4E4C4C;
+}
+.teine{
+  padding-left: 80px;
+  margin-top: 120px;
+}
+
+.teineYlemineH5Hall{
+  color:grey;
+  text-transform: uppercase;
+  font-size: 42px;
+}
+
+.teineYlemineH6{
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 58.33px;
+  margin:0;
+  max-width: 500px;
+}
+
+.teineAlumine{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  gap:34px;
+  justify-content: space-between;    
+}
+
+.teineAlumineVasak{
+  display:flex;
+  flex-direction: column; 
+  max-width: 500px; 
+  margin-top: 25px; 
+}
+
+.teineAlumineVasakSection{
+
+  letter-spacing: 0px;
+  color:grey;
+  font-size:21px;
+  line-height:33px;
+  margin-bottom: 150px;
+}     
+ 
+
+.teineAlumineVasakNooled{
+  font-size: 50px;
+  margin-bottom: 100px;
+  display: flex; 
   align-items: center;
+  margin-top: 150px;   
 }
 
-.header {
-  padding: 4rem 0 2rem 0;
+.nooledVasakParem {
+  font-size: 72px;
 }
 
-.main {
-  flex: 1;
+.nooledKaldkriips {
+  margin: 0 10px;
+}
+
+.nooledKaldkriipsKokkuLehekylgiParem {
+  color: #9A9A9A;
+}
+
+.nooledKaldkriipsKokkuLehekylgi {
+  font-size: 36px;
+}
+
+.nooledKokkuLehekylgi {
+  margin-top: 6px;
+}
+
+.teineAlumineParem{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-width: 500px;
+  margin-top: 25px;
+  margin-right: -150px;
 }
 
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-  font-weight: bold;
+.teineAlumineParemPilt{
+  background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ height:406px;
+ width: 309px;
+ margin-left: 34px;
 }
 
-.title,
-.desc {
-  text-align: center;
+.teineAlumineParemPilt1{
+ background-image: url("../../public/Layer@2x.png");
+ box-shadow: 28px 29px 199px, -16px #4E4C4C;
 }
 
-.desc {
-  line-height: 1.5;
-  font-size: 1rem;
-  font-weight: normal;
+.teineAlumineParemPilt2{
+  background-image: url("../../public/Noormees.png");
 }
 
-.addTodo {
-  display: flex;
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 2rem;
-}
-
-.input {
-  padding: 1rem;
-  border: solid 2px;
-  border-color: #cccccc;
-  border-radius: 4px;
-  flex-grow: 1;
-  margin-right: 0.5rem;
-  font-size: 1em;
-}
-
-.addButton {
-  width: 80px;
-  color: white;
-  background-color: #0070f3;
-  border-color: #0070f3;
-  font-size: 1em;
-  border: solid 2px;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.addButton:hover {
-  color: #0070f3;
-  background-color: white;
-  border-color: #0070f3;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.todoList {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.todo {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.label {
-  flex-grow: 1;
-  font-size: 1.1rem;
-  padding: 0.5rem 0;
-  cursor: pointer;
-}
-
-.checkbox {
-  margin-right: 1rem;
-}
-
-.checked {
-  text-decoration: line-through;
-}
-
-.deleteButton {
-  font-size: 1rem;
-  border: none;
-  background: none;
-  color: darkgrey;
-  cursor: pointer;
-}
-
-.deleteButton:hover {
-  color: var(--primary);
-}
-
-.emptyState {
-}
-
-@media (max-width: 600px) {
-  .main {
-    min-width: auto;
-    width: 100%;
-  }
+.teineAlumineParemPilt3{
+  background-image: url("../../public/Kaart.png"); 
 }
