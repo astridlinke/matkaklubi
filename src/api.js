@@ -1,6 +1,11 @@
 import useSWR, { mutate } from "swr";
-//import { Todo } from "./types";
 
+const trekPath = "/api/treks";
+
+export const useTreks = () => useSWR(trekPath);
+
+//import { Todo } from "./types";
+/*
 const todoPath = "/api/todos";
 
 export const useTodos = () => useSWR(todoPath);
@@ -39,4 +44,4 @@ export const deleteTodo = async (id) => {
   mutate(todoPath, todos => todos.filter(t => t.id !== id), false);
   await fetch(`${todoPath}?todoId=${id}`, { method: "DELETE" });
   mutate(todoPath);
-};
+};*/

@@ -12,6 +12,7 @@
 .paisAlumine{
 display: flex;
 justify-content: space-between;
+
 }
 
 .paisAlumineSisu{
@@ -89,7 +90,7 @@ letter-spacing: 2.25px;
 }
 .teine{
   padding-left: 80px;
-  margin-top: 120px;
+  margin-top: 120px; 
 }
 
 .teineYlemineH5Hall{
@@ -107,14 +108,14 @@ letter-spacing: 2.25px;
 }
 
 .teineAlumine{
-  display: flex;
+  display:flex;   
   gap:34px;
   justify-content: space-between;    
 }
 
 .teineAlumineVasak{
-  display:flex;
-  flex-direction: column; 
+  display:flex;  
+  flex-direction: column;
   max-width: 500px; 
   margin-top: 25px; 
 }
@@ -126,6 +127,7 @@ letter-spacing: 2.25px;
   font-size:21px;
   line-height:33px;
   margin-bottom: 150px;
+  
 }     
  
 
@@ -164,7 +166,7 @@ letter-spacing: 2.25px;
 }
 
 .teineAlumineParemPilt{
-  background-position: center;
+background-position: center;
  background-repeat: no-repeat;
  background-size: cover;
  height:406px;

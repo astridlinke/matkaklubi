@@ -26,13 +26,13 @@ export default () => {
                 <Link href="/">
                     <a className={styles.paremPoolLink}>HOME</a>
                 </Link>
-                <Link href="/">
+                <Link href="/treks">
                     <a className={styles.paremPoolLink}>UPCOMING TREKS</a>
                 </Link>
                 <Link href="/">
                     <a className={styles.paremPoolLink}>TREKS FOR FAMILY</a>
                 </Link>
-                <Link href="/">
+                <Link href="/kontakt">
                     <a className={styles.paremPoolLink}>CONTACT US</a>
                 </Link>
             </div>
