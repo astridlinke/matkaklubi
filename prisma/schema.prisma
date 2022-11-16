@@ -26,7 +26,16 @@ model Trek {
   endsAt                String
   locationlongitude     String
   loncationLatitude     String
-  locationDescription   String
+  localDescription      String
   price                 String
   imageUrl              String
+}
+
+model ContactUsMessage {
+  id                    String   @id @default(uuid())
+  createdAt             DateTime @default(now())
+  clientName            String
+  clientEmail           String
+  clientMessage         String
+  
 }

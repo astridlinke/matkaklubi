@@ -1,0 +1,36 @@
+.pais{
+    background-image: url("../../public/Hills.png");
+    height: 778px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 32px;
+    padding-left: 72px;
+    padding-right: 80px; 
+  
+}
+
+.konteiner{
+    margin-top: 50px;    
+}
+
+.vorm {
+    display:flex;
+    flex-direction:column;
+    width: 200px;
+    font-size: 16px;
+}
+
+.vormInput{
+    font-size: 14px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.vormNupp{
+    font-size: 16px;
+    margin-top: 30px;
+
+}

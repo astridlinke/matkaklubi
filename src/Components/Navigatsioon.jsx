@@ -23,7 +23,7 @@ export default () => {
                 </a>          
             </Link>        
             <div className={styles.paremPool}>
-                <Link href="/">
+                <Link href="/home">
                     <a className={styles.paremPoolLink}>HOME</a>
                 </Link>
                 <Link href="/treks">
@@ -32,7 +32,7 @@ export default () => {
                 <Link href="/">
                     <a className={styles.paremPoolLink}>TREKS FOR FAMILY</a>
                 </Link>
-                <Link href="/kontakt">
+                <Link href="/contact">
                     <a className={styles.paremPoolLink}>CONTACT US</a>
                 </Link>
             </div>

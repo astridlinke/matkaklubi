@@ -1,3 +1,4 @@
+
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
@@ -8,29 +9,29 @@ export default async (req, res) => {
       orderBy: { createdAt: "desc" },
     });
     res.json(treks);
-} //else if (req.method === "POST") {
-    // create todo
-    //const text = JSON.parse(req.body).text;
-    //const todo = await prisma.todo.create({
-    //  data: { text, completed: false },
-   // });
+  } else if (req.method === "POST") {
+    const trek=JSON.parse(req.body).trek
+    const createdTreks = await prisma.trek.create({
+      data: { ...trek },
+    });
 
-//    res.json(todo);
-//  } else if (req.method === "PUT") {
-    // update todo
-//    const id = req.query.todoId;
-//    const data = JSON.parse(req.body);
-//    const todo = await prisma.todo.update({
-//      where: { id },
-//      data,
-//    });
+    res.json(createdTreks);
+  } else if (req.method === "PUT") {
+    const id = req.query.trekId;
+    const trek = JSON.parse(req.body).trek;
+    const updatedTrek = await prisma.trek.update({
+      where: { id },
+      data :{...trek},
+    });
+    
+    res.json(updatedTrek);
+  } else if (req.method === "DELETE") {
+    const id = req.query.trekId;
+    await prisma.trek.delete({ where: { id } });
 
-//    res.json(todo);
-//  } else if (req.method === "DELETE") {
-    // delete todo
-//    const id = req.query.todoId;
-//    await prisma.todo.delete({ where: { id } });
-
-//    res.json({ status: "ok" });
-//  }
+    res.json({ status: "ok" });
+  }
 };
+
+
+
