@@ -20,7 +20,7 @@ const AdminPealeht = () =>{
     return (
         <div style= {{padding: 30}}>
             <h1>Matkaklubi adminleht</h1>
-            <AdminPais/>
+            <AdminPais/>            
         </div>
     )
 
